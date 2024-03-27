@@ -1,0 +1,48 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.text-item {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+    color:aliceblue;
+    border-color:yellow;
+}
+
+.text-item:nth-child(2) {
+    width: 50px;
+    height: 25px;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: red;
+}
