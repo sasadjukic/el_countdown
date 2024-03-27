@@ -1,13 +1,16 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
+{% extends 'base.html' %}
 <body>
-    <h1>Days to the US Presidential elections</h1>
-    <h2>{{ days }}</h2>
+    {% block content %}
+    <div class="main-container">
+        <div class="text-item">Days untill the US Presidential Elections</div>
+        <div class="text-item">{{ days }}</div>
+        <div class="button-container">
+          <a href="https://www.realclearpolling.com/polls/president/general/2024/trump-vs-biden" target="_blank"><button>RealClearPolitics</button></a>
+          <a href="https://elections2024.thehill.com/national/biden-trump-general/" target="_blank"><button>The Hill</button></a>
+          <a href="https://www.racetothewh.com/president/polls" target="_blank"><button>Road to the WH</button></a>
+        </div>
+    </div>
+    {% endblock %}
 </body>
 </html>
