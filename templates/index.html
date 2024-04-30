@@ -4,7 +4,12 @@
     {% block content %}
     <div class="main-container">
         <div class="text-item">Days untill the US Presidential Elections</div>
-        <div class="text-item">{{ days }}</div>
+        <div class="clock">
+          <div data-value="days"></div>
+          <div data-value="hours"></div>
+          <div data-value="minutes"></div>
+          <div data-value="seconds"></div>
+        </div>
         <div class="button-container">
           <a href="https://www.realclearpolling.com/polls/president/general/2024/trump-vs-biden" target="_blank"><button>RealClearPolitics</button></a>
           <a href="https://elections2024.thehill.com/national/biden-trump-general/" target="_blank"><button>The Hill</button></a>
