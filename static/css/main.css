@@ -5,16 +5,55 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: aqua;
+    background-color: #5755FE;
     font-family: "Roboto", sans-serif;
 }
 
 .main-container {
     text-align: center;
+    font-size: 2rem;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.clock div {
+    padding: 2rem;
+    color: #640D6B;
+    background-color: #FFF7FC;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    width: calc(25% - 1rem);
+    &[data-value="days"]::after, &[data-value="hours"]::after,
+    &[data-value="minutes"]::after, &[data-value="seconds"]::after{
+        display: block;
+    }
+
+    &[data-value="days"]::after {
+        content: "Days";
+    }
+
+    &[data-value="hours"]::after {
+        content: "Hours";
+    }
+
+    &[data-value="minutes"]::after {
+        content: "Minutes";
+    }
+
+    &[data-value="seconds"]::after {
+        content: "Seconds";
+    }
 }
 
 .text-item {
     margin-bottom: 10px;
+    color: #FFF7FC;
 }
 
 .button-container {
@@ -24,14 +63,17 @@ body {
 
 button {
     border-radius: 5px;
-    border-color: blueviolet;
+    border-color: #86469C;
+    background-color: #FFF7FC;
+    color: #640D6B;
+    font-size: 1.75rem;
+    margin: 10px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: blue;
-    color:aliceblue;
-    border-color:yellow;
+    background-color: #FFC470;
+    border-color:white;
 }
 
 .text-item:nth-child(2) {
